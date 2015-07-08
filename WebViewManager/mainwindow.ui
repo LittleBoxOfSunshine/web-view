@@ -227,7 +227,6 @@
     <addaction name="separator"/>
     <addaction name="actionBackup"/>
     <addaction name="actionCopy_Filesystem"/>
-    <addaction name="actionRepair_Filesystem"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
@@ -247,14 +246,6 @@
     <addaction name="actionRemove"/>
     <addaction name="actionDuplicate"/>
    </widget>
-   <widget class="QMenu" name="menuGroup">
-    <property name="title">
-     <string>Group</string>
-    </property>
-    <addaction name="actionNew_2"/>
-    <addaction name="actionRemove_2"/>
-    <addaction name="actionDuplicate_2"/>
-   </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
      <string>Help</string>
@@ -263,9 +254,15 @@
     <addaction name="actionWebView_Website"/>
     <addaction name="actionView_Logs"/>
    </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionToggle_Fullscreen"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuView"/>
-   <addaction name="menuGroup"/>
+   <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -360,9 +357,9 @@
     <string>Duplicate</string>
    </property>
   </action>
-  <action name="actionRepair_Filesystem">
+  <action name="actionToggle_Fullscreen">
    <property name="text">
-    <string>Repair Filesystem</string>
+    <string>Toggle Fullscreen</string>
    </property>
   </action>
  </widget>

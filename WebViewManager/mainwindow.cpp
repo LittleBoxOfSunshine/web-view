@@ -34,10 +34,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionRemove, SIGNAL(triggered()), this, SLOT(removeView()));
     connect(ui->actionDuplicate, SIGNAL(triggered()), this, SLOT(duplicateView()));
 
+    /*
     //Group Menu
     connect(ui->actionNew_2, SIGNAL(triggered()), this, SLOT(newGroup()));
     connect(ui->actionRemove_2, SIGNAL(triggered()), this, SLOT(removeGroup()));
     connect(ui->actionDuplicate_2, SIGNAL(triggered()), this, SLOT(duplicateGroup()));
+    */
 
     //Help Menu
     connect(ui->actionAbout, SIGNAL(triggered()), this, SLOT(about()));
@@ -198,6 +200,7 @@ void MainWindow::duplicateView(){
 
 }
 
+/*
 //Group Menu Actions
 
 void MainWindow::newGroup(){
@@ -211,6 +214,7 @@ void MainWindow::removeGroup(){
 void MainWindow::duplicateGroup(){
 
 }
+*/
 
 //Help Menu Actions
 

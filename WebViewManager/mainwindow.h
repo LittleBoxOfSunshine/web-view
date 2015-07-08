@@ -56,11 +56,13 @@ public slots:
     void removeView();
     void duplicateView();
 
+/*
     //Group Menu Actions
 
     void newGroup();
     void removeGroup();
     void duplicateGroup();
+*/
 
     //Help Menu Actions
 
